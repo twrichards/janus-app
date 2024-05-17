@@ -309,4 +309,12 @@ jQuery(function($){
         });
     });
 
+    // web clock
+    $("#web_clock").each(function(_, webClockElement) {
+        webClockElement.text(new Date().toTimeString());
+        setInterval(() => {
+            webClockElement.text(new Date().toTimeString());
+        }, 1000); // update every second
+    });
+
 });

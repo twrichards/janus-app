@@ -13,6 +13,22 @@ main {
     vertical-align: -2px;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#secondary_header {
+    position: sticky;
+    top: 64px;
+    z-index: 98;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px 5px;
+}
+
 .btn .material-icons {
     vertical-align: -3px;
 }
@@ -52,8 +68,8 @@ main {
 }
 
 .logout-button {
-    padding: 20px 10px 0px;
-    float: right;
+    flex-grow: 1;
+    text-align: right;
 }
 
 .controls__hero {
